@@ -36,10 +36,11 @@ def get_section_info(section_id: str):
     # TODO Fix this to return correct values for correct sections.
     if section_id == "a":
         return {
-            "section": "section_name",
-            "start_time": "HH:MM",
-            "end_time": "HH:MM",
-            "ta": ["taName1", "taName2"]
+            "section": "B",
+            "start_time": "14:00",
+            "end_time": "14:50",
+            "ta": ["Long", "Shrey"],
+            "comments": "give Long a raise because he's been doing all the recitations"
         }
     else:
         raise HTTPException(status_code=404, detail="Invalid section id")
